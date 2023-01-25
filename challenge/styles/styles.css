@@ -1,0 +1,63 @@
+* {
+    background-color: pink;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h1:hover {
+    color: black;
+}
+img {
+    width: 18%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+p {
+    width: 40%;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.p1 {
+    font-size: 11px;
+}
+h2 {
+    width: 35%;
+    color: black;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+h3 {
+    width: 40%;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+}
+h4 {
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    font-size: 11px;
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+}
+.p2 {
+    font-family: Arial, sans-serif;
+}
+.quote-p {
+    width: 30%;
+    font-size: 28px;
+    padding: 20px;
+}
