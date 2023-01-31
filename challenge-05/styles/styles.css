@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+#content{
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: gray;
+    border: 0;
+}
+#hero-img{
+    width: 100%;
+    margin: 0 auto;
+}
+.home-grid{
+    width: 100%;
+    margin: 0 auto;
+}
+.section-img{
+    box-sizing: border-box;
+    width: 25%;
+    border-radius: 50%;
+    margin: 60px;
+    border: 10px solid rgb(66, 66, 66);  
+} 
