@@ -118,7 +118,7 @@ footer .socail img {
     color: #D06100;
     font-family: "Sedgwick Ave", Impact, sans-serif;
     font-size: 2em;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .msg {
     line-height: 1.5em;
@@ -142,8 +142,12 @@ h2 {
     font-family: "Sedgwick Ave", Impact, sans-serif;
     margin: 0;
 }
-.logo, .icon {
+.logo {
     width: 120px;
+}
+
+.icon {
+    width: 80px;
 }
 #hero-img {
     width: 100%;
