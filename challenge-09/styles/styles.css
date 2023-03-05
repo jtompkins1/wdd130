@@ -1,0 +1,74 @@
+
+body {
+    background-color: black;
+}
+#content {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+}
+#hero, img {
+    width: 100%;
+    /* border-top-right-radius: 10%;
+    border-top-left-radius: 10%; */
+
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+#bottom {
+    background-color: steelblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+section {
+    text-align: center;
+    color: white;
+}
+#read {
+    grid: 1/2;
+}
+#views {
+    grid:2/3;
+}
+#comments {
+    grid: 3/4;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: steelblue;
+    margin: 0 auto;
+    padding-top: 15px;
+
+}
+h2 {
+    font-family: Cambria, serif;
+    font-size: 32px;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: gray;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+h3 {
+    font-family: serif;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+h4 {
+    font-size: 12px;
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
