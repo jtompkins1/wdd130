@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tompkins Family | Recipes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/tompkins-logo.png" alt="Tompkins Family Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="mealplan.html">Meal Planning</a>
+                <a href="recipes.html">Recipes</a>
+            </nav>
+        </header>
+
+        <div>
+            <img src="images/stove.jpg" alt="Stove">
+            <h1>Recipes</h1>
+        </div>
+
+        <main>
+            <aside>
+                <img src="images/cookbook.jpg" alt="cookbook">
+            </aside>
+            <!-- accordian list for recipes -->
+            <section> 
+
+                <button class="accordion">Swiss Chicken Bake</button>
+                <div class="panel">
+                <dl>
+                    <dt>Ingredients:</dt>
+                    <dd>2 cups cooked, shredded chicken, 2 can cream of chicken soup, 1 cup sour cream, 1 bag frozen California blend mixed vegetables (thawed), 8 slices Swiss cheese, 2 cups French fried onions, ½ tsp Thyme, salt and pepper</dd>
+                    <dt>Instructions:</dt>
+                    <dd>Preheat oven to 350, Grease 9x13 baking dish and set aside. In large bowl combine soup, sour cream, seasonings, chicken and vegetables.  Spread mixture into baking dish.  Top with slices of Swiss cheese and a layer of French-fried onions.  Cover with tinfoil and bake for 30 minutes or until casserole is bubbling.  Remove tinfoil and bake 5 more minutes or until onions are browned.</dd>
+                    <dd>*Casserole can be built ahead (without adding the french-fried onions) and stored in fridge or freezer to cook at a later time.  If frozen, thaw in fridge overnight.   Top with french-fried onions prior to baking.</dd>
+                </dl>
+                </div>
+
+                <button class="accordion">Tater-tot Casserole</button>
+                <div class="panel">
+                <dl>
+                    <dt>Ingredients:</dt>
+                    <dd>32 oz frozen tater tots, 1 pound ground beef, 2 cans cream of mushroom soup, 12 oz frozen mixed veggies, 2 cups shredded cheese, salt and pepper</dd>
+                    <dt>Instructions:</dt>
+                    <dd>Preheat oven to 400, Grease 9x13 baking dish and set aside.  In large skillet brown the ground beef and drain the grease. Mix together the beef, cream of mushroom, and frozen veggies and spread into the baking dish.  Top with a layer of shredded cheese and an even layer of tater tots. Bake in preheated oven for about 40 minutes or until tater tots are browned and the casserole is bubbling.</dd>
+                    <dd>*Casserole can be built ahead and stored in fridge or freezer to cook at a later time.  If frozen, thaw in fridge overnight.</dd>
+                </dl>
+                </div>
+
+                <button class="accordion">Crockpot Pantry Chili</button>
+                <div class="panel">
+                <dl>
+                    <dt>Ingredients:</dt>
+                    <dd>1 can diced tomatoes, 1 can chili beans, 1 can black beans(rinsed), 1 can condensed tomato soup, 1 can roast beef, 1 can pulled pork in BBQ sauce, 2 Tbsp dried onion, 3 Tbsp sugar, 1 Tbsp chili powder, 1 tsp ground cumin, ½ tsp ground cinnamon, ¼ tsp cayenne powder</dd>
+                    <dt>Instructions:</dt>
+                    <dd>Combine all ingredients in crockpot and cook on low for 4-6 hours.</dd>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>GJLE Tompkins &copy; 2023 - Jennifer Tompkins</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jmtompkins1/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>
+
+        <!-- javascript for accordian list -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>
