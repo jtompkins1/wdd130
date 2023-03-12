@@ -18,6 +18,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #6dd3ce;
