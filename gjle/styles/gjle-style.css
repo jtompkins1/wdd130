@@ -10,8 +10,6 @@ header {
   grid-template-columns: 220px auto;
   color: white;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
   margin-bottom: 30px;
 }
 nav {
@@ -22,7 +20,7 @@ nav a {
   text-align: center;
   color: white;
   text-decoration: none;
-  padding: 40px;
+  padding: 45px;
 }
 nav a:hover {
   background-color: #B03C3C;
@@ -43,7 +41,7 @@ nav a:active {
 body {
   background-color: white;
   font-family: "Rubik", Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   margin: 0;
   padding: 0;
 }
@@ -97,9 +95,9 @@ h1, h2 {
 }
 
 #intro-msg {
-  color: #231111;
+  color: #283691;
   text-align: center;
-  /* font-size: 1.5em; */
+  /* font-size: 24px; */
   padding: 25px;
 }
 #intro-grid {
@@ -116,7 +114,8 @@ h1, h2 {
   grid-gap: 30px;
   grid-template-rows: 1fr;
   margin-bottom: 50px;
-  background-color: #283691;
+  /* background-color: #283691; */
+  background-color: #231111;
   border-radius: 10px;
 }
 #coming-soon-img {
@@ -124,7 +123,8 @@ h1, h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 50px;
-  border: 5px solid black;
+  /* border: 5px solid black; */
+  border: 5px solid white;
   border-radius: 20px;
 }
 #coming-soon-msg {
@@ -135,7 +135,7 @@ h1, h2 {
   justify-self: center;
   align-self: center;
   padding: 30px;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 li {
   font-family: "Rubik";
@@ -149,7 +149,6 @@ footer {
 }
 footer a {
   color: white;
-  text-decoration: none;
   padding: 10px;
 }
 footer a:hover {
