@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #00230E;
+  --primary-color: #283691;
   --secondary-color: #B03C3C;
   --accent1-color: #231111;
-  --accent2-color: #283691;
+  --accent2-color: #00230E;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Rubik Mono One";
@@ -19,12 +19,13 @@ Fonts are separated by a | */
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #283691; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #B03C3C;
+  --paragraph-background-color: #283691;
   --nav-link-color: white;
   --nav-background-color: #283691;
-  --nav-hover-link-color: #231111;
+  --nav-hover-link-color: white;
   --nav-hover-background-color: #B03C3C;
 }
+
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */

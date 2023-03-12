@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sedgwick+Ave&display=swap');
+  
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -17,7 +18,6 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 35px;
 }
 nav a:hover {
     background-color: #6dd3ce;
@@ -26,11 +26,15 @@ nav a:hover {
 nav a:active {
     background-color: #D06100;
 }
+.logo {
+    width: 120px;
+}
 #logo-link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
+
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -144,9 +148,6 @@ h2 {
     color: #D06100;
     font-family: "Sedgwick Ave", Impact, sans-serif;
     margin: 0;
-}
-.logo {
-    width: 120px;
 }
 
 .icon {
