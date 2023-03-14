@@ -4,13 +4,21 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.top {
+  margin-top: 120px;
+}
 header {
+  max-width: 1400px;
   background-color:#283691;
   display: grid;
-  grid-template-columns: 220px auto;
+  grid-template-columns: 200px auto;
   color: white;
+  align-self: center;
   align-items: center;
-  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 nav {
   display: flex;
@@ -20,7 +28,7 @@ nav a {
   text-align: center;
   color: white;
   text-decoration: none;
-  padding: 45px;
+  padding: 35px;
 }
 nav a:hover {
   background-color: #B03C3C;
@@ -30,7 +38,7 @@ nav a:active {
   background-color: #B03C3C;
 }
 .logo {
-  width: 200px;
+  width: 180px;
   border-radius: 10px;
 }
 #logo-link {
@@ -39,7 +47,6 @@ nav a:active {
   align-self: center;
 }
 body {
-  background-color: white;
   font-family: "Rubik", Verdana, sans-serif;
   font-size: 22px;
   margin: 0;
@@ -54,6 +61,8 @@ h1, h2 {
   max-width: 800px;
   position: relative;
   margin: auto;
+  margin-bottom: 30px;
+  z-index: -1;
 }
 /* Hide the images by default */
 .mySlides {
@@ -85,27 +94,30 @@ h1, h2 {
   animation-duration: 1.5s;
 }
 
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 .slide-img {
-  width: 50%;
+  width: 100%;
 }
 
 #intro-msg {
-  color: #283691;
-  text-align: center;
-  /* font-size: 24px; */
-  padding: 25px;
+  background-color: #B03C3C;
+  opacity: .75;
+  margin-top: -130px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  z-index: 1;
+  max-width: 55%;
+  margin-left: auto;
 }
-#intro-grid {
-  display: grid;
-  grid-template-columns: 100px 2fr 1fr 3fr 100px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+#intro-msg p {
+  color: white;
+  text-align: right;
+  font-size: .8em;
+  padding: 10px;
 }
-
 #coming-soon{
   display: grid;
   max-width: 1000px;
@@ -113,8 +125,8 @@ h1, h2 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   grid-template-rows: 1fr;
+  margin-top: 50px;
   margin-bottom: 50px;
-  /* background-color: #283691; */
   background-color: #231111;
   border-radius: 10px;
 }
@@ -123,7 +135,6 @@ h1, h2 {
   grid-column: 1/2;
   grid-row: 1/2;
   margin: 50px;
-  /* border: 5px solid black; */
   border: 5px solid white;
   border-radius: 20px;
 }
@@ -135,7 +146,6 @@ h1, h2 {
   justify-self: center;
   align-self: center;
   padding: 30px;
-  /* font-size: 1.2em; */
 }
 li {
   font-family: "Rubik";
@@ -146,6 +156,7 @@ footer {
   align-items: center;
   background-color: #00230E;
   padding: 10px;
+  margin-top: 50px;
 }
 footer a {
   color: white;
@@ -162,10 +173,57 @@ footer p {
 .social {
   border-radius: 15px;
 }
+
+/* start of page2 meal planning styles */
+
+.sub-main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#mp-intro-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1fr;
+  /* column-gap: 20px; */
+  color: #231111;
+  margin-top: 60px;
+  margin-bottom: 60px;  
+}
+#calendar-img {
+  width: 100%;
+  grid-column: 1/2;
+  border-radius: 20px;
+}
+#mp-intro-msg {
+  grid-column: 2/3;
+  text-align: center;
+  margin-top: 20px;
+}
+#mp-intro-msg h1 {
+  font-size: 40px;
+}
+
+/* start of page3 recipes styles */
+
+#recipes-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 300px;
+}
+#recipes-title h1 {
+  margin-top: -330px;
+}
+
+
+
+
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #231111;
+    color:white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -173,11 +231,15 @@ footer p {
     border: none;
     outline: none;
     transition: 0.4s;
+    font-family: "Rubik Mono One", Impact, sans-serif;
+    font-size: 20px;
+    margin-bottom: 2px;
+
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color:#B03C3C;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -190,11 +252,17 @@ footer p {
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: white;
     float: right;
     margin-left: 5px;
   }
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: white;
   }
+  dl {
+    font-size: 18px;
+    color:#283691;
+  }
+  
