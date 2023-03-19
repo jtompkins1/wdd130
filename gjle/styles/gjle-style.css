@@ -61,7 +61,8 @@ h1, h2 {
   max-width: 800px;
   position: relative;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  margin-top: 150px;
   z-index: -1;
 }
 /* Hide the images by default */
@@ -126,7 +127,7 @@ h1, h2 {
   grid-gap: 30px;
   grid-template-rows: 1fr;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-color: #231111;
   border-radius: 10px;
 }
@@ -188,8 +189,8 @@ footer p {
   grid-template-rows: 1fr;
   /* column-gap: 20px; */
   color: #231111;
-  margin-top: 60px;
-  margin-bottom: 60px;  
+  margin-bottom: 80px;  
+  margin-top: 200px;
 }
 #calendar-img {
   width: 100%;
@@ -204,6 +205,67 @@ footer p {
 #mp-intro-msg h1 {
   font-size: 40px;
 }
+#examples-container {
+  width: 80%;
+  display: grid;
+  background-color: #00230E;
+  border-radius: 20px;
+  color: white;
+  grid-template-columns: 1.5fr 1.3fr 1fr;
+  grid-template-rows: 100px 1fr;
+  column-gap: 40px;
+  padding: 30px;
+  justify-items: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+#examples-container h2 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+#list-img {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  max-width: 220px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#ex-meals-1 {
+  grid-column: 1/2;
+}
+#ex-meals-2 {
+  grid-column:2/3;
+}
+#plan-list-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.3fr;
+  grid-gap: 10px;
+  margin: auto;
+  
+}
+#plan-list-grid h3 {
+  text-align: center;
+}
+.plan p{
+  font-size: 22px;
+  margin-left: 40px;
+}
+.grocery-list li {
+  font-size: 16px;
+  margin-left: 40px;
+
+}
+.plan, .grocery-list {
+  border: 5px solid #283691;
+  color: #283691;
+  
+}
+
 
 /* start of page3 recipes styles */
 
