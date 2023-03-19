@@ -148,6 +148,9 @@ h1, h2 {
   align-self: center;
   padding: 30px;
 }
+#coming-soon-msg h2 {
+  text-align: center;
+}
 li {
   font-family: "Rubik";
 }
@@ -266,7 +269,6 @@ footer p {
   
 }
 
-
 /* start of page3 recipes styles */
 
 #recipes-title {
@@ -277,9 +279,6 @@ footer p {
 #recipes-title h1 {
   margin-top: -330px;
 }
-
-
-
 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -328,3 +327,24 @@ footer p {
     color:#283691;
   }
   
+@media screen and (max-width: 900px) {
+  nav, footer {
+    flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  .top {
+    margin-top: 200px;
+  }
+  #mp-intro-container, #plan-list-grid, #coming-soon {
+    display: block;
+    height: auto;
+
+  }
+
+  #coming-soon-img, #calendar-img, #list-img, #recipes-title {
+    display: none;
+  }
+}
