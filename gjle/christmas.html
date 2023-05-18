@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tompkins Family | Recipes</title>
+    <link rel="stylesheet" href="styles/gjle-style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo-link" href="index.html">
+                <img class="logo" src="images/tompkins-logo2.png" alt="Tompkins Family Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="mealplan.html">Meal Planning</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="christmas.html">Christmas</a>
+            </nav>
+        </header>
+
+        <div class="top">
+        </div>
+
+        <main class="sub-main">
+            <div id="christmas-title">
+                <h1>Christmas Gift Exchanges<h1>
+            </div>
+
+            <!-- accordian list for recipes -->
+
+            <div id="christmas">
+                <h2>Compton Family</h2>
+
+                <table>
+                <tr>
+                    <th>From:</th>
+                    <th>To: 2023</th>
+                    <th>To: 2024</th>
+                    <th>To: 2025</th>
+                    <th>To: 2026</th>
+                </tr>
+                <tr>
+                    <td>Jen & Grant</td>
+                    <td>Mom & Dad</td>
+                    <td>Taylor</td>
+                    <td>Joey & Taylor</td>
+                    <td>Rachel & Danny</td>
+                </tr>
+                <tr>
+                    <td>Rachel & Danny</td>
+                    <td>Jen & Grant</td>
+                    <td>Mom & Dad</td>
+                    <td>Taylor</td>
+                    <td>Joey & Taylor</td>
+                </tr>
+                <tr>
+                    <td>Joey & Taylor</td>
+                    <td>Rachel & Danny</td>
+                    <td>Jen & Grant</td>
+                    <td>Mom & Dad</td>
+                    <td>Taylor</td>
+                </tr>
+                <tr>
+                    <td>Taylor</td>
+                    <td>Joey & Taylor</td>
+                    <td>Rachel & Danny</td>
+                    <td>Jen & Grant</td>
+                    <td>Mom & Dad</td>
+                </tr>
+                <tr>
+                    <td>Mom & Dad</td>
+                    <td>Taylor</td>
+                    <td>Joey & Taylor</td>
+                    <td>Rachel & Danny</td>
+                    <td>Jen & Grant</td>
+                </tr>
+
+                </table>
+                <h2>Cousins</h2>
+                <table>
+                    <tr>
+                        <th>From:</th>
+                        <th>To: 2023</th>
+                    </tr>
+                    <tr>
+                        <td>Elliott</td>
+                        <td>Bella</td>
+                    </tr>
+                    <tr>
+                        <td>Leo</td>
+                        <td>Piper</td>
+                    </tr>
+                    <tr>
+                        <td>Bella</td>
+                        <td>Elliott</td>
+                    </tr>
+                    <tr>
+                        <td>Piper</td>
+                        <td>Leo</td>
+                    </tr>
+                    
+                </table>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <p>GJLE Tompkins &copy; 2023 - Jennifer Tompkins</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div>
+                <a href="https://www.linkedin.com/in/jmtompkins1/" target="_blank">
+                    <img class="social" src="images/linkedin.png" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>
+
+        <!-- javascript for accordian list -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>
