@@ -283,6 +283,7 @@ footer p {
 
 /* start of page4 Christmas */
 
+
 /* table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -298,6 +299,7 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 } */
+
 
 
 
@@ -356,7 +358,7 @@ tr:nth-child(even) {
       padding: 15px;
   }
   .top {
-    margin-top: 200px;
+    margin-top: 250px;
   }
   #mp-intro-container, #plan-list-grid, #coming-soon {
     display: block;
